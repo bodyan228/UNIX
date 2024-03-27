@@ -56,7 +56,6 @@ int main(int argc, char *argv[]) {
         }
     }    
     close(d_input_file);
-//    ftruncate(b_file_write, lseek(b_file_write, BLOCK_SIZE, SEEK_CUR));
     close(d_output_file);
 
     return 0;
