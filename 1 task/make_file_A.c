@@ -14,5 +14,6 @@ int main() {
     write(a_file, "1", 1);
     lseek(a_file, 0, SEEK_END);
     write(a_file, "1", 1);
+    close(a_file);
     return 0;
 }
