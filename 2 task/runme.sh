@@ -13,7 +13,7 @@ touch myfile
 for i in {1..10}
 do
     # Запускаем с nohup, чтобы процессы сами по себе не умирали
-    nohup ./main myfile &
+    nohup ./main myfile 2>/dev/null &
     pid=$!
     list_pid+=("$pid")
 done
